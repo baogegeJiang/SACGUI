@@ -42,7 +42,6 @@ you can choose to plot the amplitude, phase, real part or image part of the spec
 you can also choose whether to use the loglog axes.
 
 (10) filter: press 'filter' to do data filtering.
-
      there are two filter. The Bessel is a low pass filter. Only the right frequency will work if you choose Bessel.
      and you should input the frequencies by yourself.                                  
      we have a no delay filter way for you.
