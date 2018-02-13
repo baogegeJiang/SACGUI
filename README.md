@@ -18,7 +18,7 @@ By: Jiang Yiran          Email: yiranj@pku.edu.cn
          There is a visualization interface. You can press the buttons to do some operations. We will show you how to use this buttons.
  
 
-(1)	browser and add: by pressing the 'browser & add 'button, you can select multiple files at once, or add new files after the selected files. The files you select will show in the sacfile list box.
+(1)	browse and add: by pressing the 'browser & add 'button, you can select multiple files at once, or add new files after the selected files. The files you select will show in the sacfile list box.
 
 (2)	readsac: after selecting files, you can press the 'readsac' button to read them into memory. If this operation have been done, the program will add a 'read in' line in the 'state' box. If there is no file selected, the line will be 'no file in list'. 
 
