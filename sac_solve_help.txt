@@ -1,6 +1,6 @@
-SAC_Solve
+SACGUI
 
-by Yiran Jiang    Email:1300012404@pku.edu.cn 
+by Yiran Jiang    Email:yiranj@pku.edu.cn 
 
 Part One
 
