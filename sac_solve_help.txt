@@ -1,0 +1,25 @@
+SAC_Solve
+
+by Yiran Jiang    Email:1300012404@pku.edu.cn 
+
+Part One
+
+this program tries to provide a way similar with SAC to users in matlab. 
+you can use part of SAC's commands. for example, use 'n' to plot next 
+several figures, as well as 'b'; use 'f' 'p' 's' to pick phase; use 'x' 
+to magnify figures, as well as 'o'. 'USE' means key press.
+
+to get start, you can push on 'browser & add' to select sac files. you can 
+add different sac files in more than one time; you can also add more than 
+one sac files in a time; 
+
+then the sacfiles you select will show in 'sacfile list'; if you want to 
+clear the list, choose the box and press 'c' in your keybroad. 'c' will 
+also work with the 'state' box.the 'state' box will show you some 
+information of the process. the blank box in which you can type words. 
+you can run command in the program.
+
+press 'w' to write the already changed sacfile. if you choose 'write over', 
+ new ones will replace the old ones; otherwise, the new one will saved in 
+the work directory with name as {original name}_temp.
+

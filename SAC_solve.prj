@@ -1,0 +1,176 @@
+<deployment-project plugin="plugin.apptool" plugin-version="1.0">
+  <configuration build-checksum="3128836831" file="/Users/baogege/Documents/MATLAB/SACGUI/SAC_solve.prj" location="/Users/baogege/Documents/MATLAB/SACGUI" name="SAC_solve" target="target.mlapps" target-name="Package App">
+    <param.appname>SAC_solve</param.appname>
+    <param.authnamewatermark>Yiran Jiang</param.authnamewatermark>
+    <param.email>1300012404@pku.edu.cn</param.email>
+    <param.company />
+    <param.icon />
+    <param.icons />
+    <param.summary />
+    <param.description>SAC_Solve
+
+by Yiran Jiang Email:1300012404@pku.edu.cn 
+
+Part One
+
+this program tries to provide a similar way with SAC to users in matlab. 
+you can use part of SAC's commands. for example, use 'n' to plot next 
+several figures, as well as 'b'; use 'f' 'p' 's' to pick phase; use 'x' 
+to magnify figures, as well as 'o'. 'USE' means key press.
+
+to get start, you can push on 'browser &amp; add' to select sac files. you can 
+add different sac files in more than one time; you can also add more than 
+one sac files in a time; 
+
+then the sacfiles you select will show in 'sacfile list'; if you want to 
+clear the list, choose the box and press 'c' in your keybroad. 'c' will 
+also work with the 'state' box.the 'state' box will show you some 
+information of the process. the blank box in which you can type words. 
+you can run command in the program.
+
+press 'w' can write the already changed sacfile. if you choose 'write over', 
+ new ones will replace the old ones; otherwise, the new one will saved in 
+the work directory with name as {original name}_temp.</param.description>
+    <param.screenshot />
+    <param.version>1.0</param.version>
+    <param.products.name />
+    <param.products.id />
+    <param.products.version />
+    <param.platforms />
+    <param.output>/Users/baogege/Desktop</param.output>
+    <param.guid>2d4c8f4f-5c6e-4cba-9ff8-5dd71f43d909</param.guid>
+    <unset>
+      <param.company />
+      <param.icon />
+      <param.icons />
+      <param.summary />
+      <param.screenshot />
+      <param.version />
+      <param.products.name />
+      <param.products.id />
+      <param.products.version />
+      <param.platforms />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}/main.m</file>
+    </fileset.main>
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}/axis_update.m</file>
+      <file>${PROJECT_ROOT}/axis_update2.m</file>
+      <file>${PROJECT_ROOT}/browser_add_get_list.m</file>
+      <file>${PROJECT_ROOT}/creat_sacfigure.m</file>
+      <file>${PROJECT_ROOT}/keypress.m</file>
+      <file>${PROJECT_ROOT}/main.fig</file>
+      <file>${PROJECT_ROOT}/plot_on.m</file>
+      <file>${PROJECT_ROOT}/plot_sac.m</file>
+      <file>${PROJECT_ROOT}/readsac.m</file>
+      <file>${PROJECT_ROOT}/state_new.m</file>
+      <file>${PROJECT_ROOT}/str2cell.m</file>
+      <file>${PROJECT_ROOT}/temp_sacfile/NM.LCH.BHE.SAC</file>
+      <file>${PROJECT_ROOT}/temp_sacfile/NM.LCH.BHN.SAC</file>
+      <file>${PROJECT_ROOT}/temp_sacfile/NM.LCH.BHZ.SAC</file>
+      <file>${PROJECT_ROOT}/temp_sacfile/NM.QSH.BHE.SAC</file>
+      <file>${PROJECT_ROOT}/temp_sacfile/NM.QSH.BHN.SAC</file>
+      <file>${PROJECT_ROOT}/temp_sacfile/NM.QSH.BHZ.SAC</file>
+      <file>${PROJECT_ROOT}/temp_sacfile/SX.HSH.BHE.SAC</file>
+      <file>${PROJECT_ROOT}/temp_sacfile/SX.HSH.BHN.SAC</file>
+      <file>${PROJECT_ROOT}/temp_sacfile/SX.HSH.BHZ.SAC</file>
+      <file>${PROJECT_ROOT}/temp_sacfile/SX.JIC.BHE.SAC</file>
+      <file>${PROJECT_ROOT}/temp_sacfile/SX.JIC.BHN.SAC</file>
+      <file>${PROJECT_ROOT}/temp_sacfile/SX.JIC.BHZ.SAC</file>
+      <file>${PROJECT_ROOT}/temp_sacfile/SX.PIG.BHE.SAC</file>
+      <file>${PROJECT_ROOT}/temp_sacfile/SX.PIG.BHN.SAC</file>
+      <file>${PROJECT_ROOT}/temp_sacfile/SX.PIG.BHZ.SAC</file>
+      <file>${PROJECT_ROOT}/temp_sacfile/SX.SHC.BHE.SAC</file>
+      <file>${PROJECT_ROOT}/temp_sacfile/SX.SHC.BHN.SAC</file>
+      <file>${PROJECT_ROOT}/temp_sacfile/SX.SHC.BHZ.SAC</file>
+      <file>${PROJECT_ROOT}/temp_sacfile/SX.SHZ.BHE.SAC</file>
+      <file>${PROJECT_ROOT}/temp_sacfile/SX.SHZ.BHN.SAC</file>
+      <file>${PROJECT_ROOT}/temp_sacfile/SX.SHZ.BHZ.SAC</file>
+      <file>${PROJECT_ROOT}/temp_sacfile/SX.SZZ.BHE.SAC</file>
+      <file>${PROJECT_ROOT}/temp_sacfile/SX.SZZ.BHN.SAC</file>
+      <file>${PROJECT_ROOT}/temp_sacfile/SX.SZZ.BHZ.SAC</file>
+      <file>${PROJECT_ROOT}/temp_sacfile/SX.WAR.BHE.SAC</file>
+      <file>${PROJECT_ROOT}/temp_sacfile/SX.WAR.BHN.SAC</file>
+      <file>${PROJECT_ROOT}/temp_sacfile/SX.WAR.BHZ.SAC</file>
+      <file>${PROJECT_ROOT}/temp_sacfile/SX.YAG.BHE.SAC</file>
+      <file>${PROJECT_ROOT}/temp_sacfile/SX.YAG.BHN.SAC</file>
+      <file>${PROJECT_ROOT}/temp_sacfile/SX.YAG.BHZ.SAC</file>
+      <file>${PROJECT_ROOT}/temp_sacfile/SX.YIX.BHE.SAC</file>
+      <file>${PROJECT_ROOT}/temp_sacfile/SX.YIX.BHN.SAC</file>
+      <file>${PROJECT_ROOT}/temp_sacfile/SX.YIX.BHZ.SAC</file>
+      <file>${PROJECT_ROOT}/temp_sacfile/SX.YMG.BHE.SAC</file>
+      <file>${PROJECT_ROOT}/temp_sacfile/SX.YMG.BHN.SAC</file>
+      <file>${PROJECT_ROOT}/temp_sacfile/SX.YMG.BHZ.SAC</file>
+      <file>${PROJECT_ROOT}/temp_sacfile/SX.YUY.BHE.SAC</file>
+      <file>${PROJECT_ROOT}/temp_sacfile/SX.YUY.BHN.SAC</file>
+      <file>${PROJECT_ROOT}/temp_sacfile/SX.YUY.BHZ.SAC</file>
+      <file>${PROJECT_ROOT}/temp_sacfile/SX.ZCH.BHE.SAC</file>
+      <file>${PROJECT_ROOT}/temp_sacfile/SX.ZCH.BHN.SAC</file>
+      <file>${PROJECT_ROOT}/temp_sacfile/SX.ZCH.BHZ.SAC</file>
+      <file>${PROJECT_ROOT}/temp_sacfile/sx.D250.BHE.SAC</file>
+      <file>${PROJECT_ROOT}/temp_sacfile/sx.D250.BHN.SAC</file>
+      <file>${PROJECT_ROOT}/temp_sacfile/sx.D250.BHZ.SAC</file>
+      <file>${PROJECT_ROOT}/temp_sacfile/sx.D290.BHE.SAC</file>
+      <file>${PROJECT_ROOT}/temp_sacfile/sx.D290.BHN.SAC</file>
+      <file>${PROJECT_ROOT}/temp_sacfile/sx.D290.BHZ.SAC</file>
+      <file>${PROJECT_ROOT}/temp_sacfile/sx.D320.BHE.SAC</file>
+      <file>${PROJECT_ROOT}/temp_sacfile/sx.D320.BHN.SAC</file>
+      <file>${PROJECT_ROOT}/temp_sacfile/sx.D320.BHZ.SAC</file>
+      <file>${PROJECT_ROOT}/writesac.m</file>
+    </fileset.depfun>
+    <fileset.resources>
+      <file>${PROJECT_ROOT}/sac_solve_help.txt</file>
+      <file>${PROJECT_ROOT}/temp_sacfile</file>
+    </fileset.resources>
+    <fileset.package />
+    <build-deliverables>
+      <file location="/Users/baogege" name="Desktop" optional="false">/Users/baogege/Desktop</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>/Applications/MATLAB_R2015b.app</root>
+      <toolboxes>
+        <toolbox name="matlabhdlcoder" />
+        <toolbox name="fixedpoint" />
+        <toolbox name="embeddedcoder" />
+        <toolbox name="matlabcoder" />
+      </toolboxes>
+      <toolbox>
+        <matlabhdlcoder>
+          <enabled>true</enabled>
+        </matlabhdlcoder>
+      </toolbox>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>true</unix>
+      <mac>true</mac>
+      <windows>false</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.11.6</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>maci64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
