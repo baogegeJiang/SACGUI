@@ -26,11 +26,11 @@ function varargout = main(varargin)
 
 % Begin initialization code - DO NOT EDIT
 addpath(genpath(pwd));
-global machineIsPhaseG machineIsPG
-load machineIsPhase
-load machineIsP
-machineIsPhaseG=machineIsPhase;
-machineIsPG=machineIsP;
+%global machineIsPhaseG machineIsPG
+%load machineIsPhase
+%load machineIsP
+%machineIsPhaseG=machineIsPhase;
+%machineIsPG=machineIsP;
 gui_Singleton = 1;
 gui_State = struct('gui_Name',       mfilename, ...
                    'gui_Singleton',  gui_Singleton, ...
