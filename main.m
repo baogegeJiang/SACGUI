@@ -22,7 +22,7 @@ function varargout = main(varargin)
 
 % Edit the above text to modify the response to help main
 
-% Last Modified by GUIDE v2.5 27-Feb-2018 13:11:32
+% Last Modified by GUIDE v2.5 27-Feb-2018 16:50:31
 
 % Begin initialization code - DO NOT EDIT
 addpath(genpath(pwd));
@@ -412,3 +412,10 @@ function inWindow_Callback(hObject, eventdata, handles)
 % handles    structure with handles and user data (see GUIDATA)
 
 % Hint: get(hObject,'Value') returns toggle state of inWindow
+
+
+% --- Executes on key press with focus on plot_freq and none of its controls.
+function plot_freq_KeyPressFcn(hObject, eventdata, handles)
+key = get(gcf,'Currentcharacter');
+eval(keypress(hObject, eventdata, handles,key));
+uicontrol(handles.plot_freq);

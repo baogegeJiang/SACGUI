@@ -14,9 +14,11 @@ switch key
             state_new(hObject, eventdata, handles,'plotting_done');
         end
         guidata(hObject, handles);
+        if strcmp(name,'plot_freq')
         plot_freq(hObject, eventdata, handles);
+        end
     case 'b'
-    if strcmp(name,'plotsac')
+    if strcmp(name,'plotsac')+strcmp(name,'plot_freq')
     handles.figure_index=handles.figure_index-handles.fnum;
     if  handles.figure_index<=0
         handles.figure_index=1;
@@ -24,6 +26,9 @@ switch key
     end
     guidata(hObject, handles);
     plot_freq(hObject, eventdata, handles);
+    if strcmp(name,'plot_freq')
+       plot_freq(hObject, eventdata, handles);
+    end
     else
         uicontrol(handles.sacfile_browser);
     end
