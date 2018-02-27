@@ -22,7 +22,7 @@ function varargout = main(varargin)
 
 % Edit the above text to modify the response to help main
 
-% Last Modified by GUIDE v2.5 14-Feb-2018 20:58:39
+% Last Modified by GUIDE v2.5 27-Feb-2018 13:11:32
 
 % Begin initialization code - DO NOT EDIT
 addpath(genpath(pwd));
@@ -403,3 +403,12 @@ function no_delay_CreateFcn(hObject, eventdata, handles)
 % --- Executes on button press in pushbutton23.
 function pushbutton23_Callback(hObject, eventdata, handles)
 handles = pickPhase( hObject, eventdata, handles );
+
+
+% --- Executes on button press in inWindow.
+function inWindow_Callback(hObject, eventdata, handles)
+% hObject    handle to inWindow (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hint: get(hObject,'Value') returns toggle state of inWindow
