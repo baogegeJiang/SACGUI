@@ -15,18 +15,10 @@ if get(handles.inWindow,'Value')
    fAX=handles.fax;
    bSec=(sac.NZHOUR*60+sac.NZMIN)*60+sac.NZSEC+0.001*sac.NZMSEC+sac.B;
    eSec=(sac.NZHOUR*60+sac.NZMIN)*60+sac.NZSEC+0.001*sac.NZMSEC+sac.E;
-   lx=length(data);
    timeL=bSec:sac.DELTA:eSec;
-   lt=length(timeL);
-   data=data(1:min(lx,lt));timeL=timeL(1:min(lx,lt));
-   L=find((timeL-handles.fax(1)).*(timeL-handles.fax(2))<0);
-   data=sac.DATA1(L);
-   data=data-mean(data);
+   L=find(timeL>handles.fax+)
 end
-[comp,freq]=sac_freq(data,sac.DELTA);
-if length(comp)>100
-comp(1:60)=0;
-end
+[comp,freq]=sac_freq(sac.DATA1,sac.DELTA);
 handles.sac(i).comp=comp;handles.sac(i).freq=freq;
 switch mode
     case 'phase'
