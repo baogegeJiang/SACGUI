@@ -22,10 +22,15 @@ function varargout = main(varargin)
 
 % Edit the above text to modify the response to help main
 
-% Last Modified by GUIDE v2.5 09-Jan-2017 09:57:25
+% Last Modified by GUIDE v2.5 14-Feb-2018 20:58:39
 
 % Begin initialization code - DO NOT EDIT
 addpath(genpath(pwd));
+global machineIsPhaseG machineIsPG
+load machineIsPhase
+load machineIsP
+machineIsPhaseG=machineIsPhase;
+machineIsPG=machineIsP;
 gui_Singleton = 1;
 gui_State = struct('gui_Name',       mfilename, ...
                    'gui_Singleton',  gui_Singleton, ...
@@ -393,3 +398,8 @@ set(hObject,'Value',1);
 % --- Executes during object creation, after setting all properties.
 function no_delay_CreateFcn(hObject, eventdata, handles)
 %set(hObject,'Value',1);
+
+
+% --- Executes on button press in pushbutton23.
+function pushbutton23_Callback(hObject, eventdata, handles)
+handles = pickPhase( hObject, eventdata, handles );

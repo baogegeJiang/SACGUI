@@ -16,7 +16,7 @@ x=sac.DATA1;lx=length(x);
 nztime=(sac.NZHOUR*60+sac.NZMIN)*60+sac.NZSEC+0.001*sac.NZMSEC;
 t=sac.B : sac.DELTA : sac.E;t=t+nztime;lt=length(t);
 x=x(1:min(lx,lt));t=t(1:min(lx,lt));
-plot(t,x);hold on;plot([-1000000,1000000],[0,0]);hold off;
+plot(t,x,'b');hold on;plot([-1000000,1000000],[0,0]);hold off;
 xmax=max(abs(x));
 
 if UD.pindex==1
