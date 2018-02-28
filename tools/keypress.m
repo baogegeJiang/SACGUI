@@ -17,6 +17,13 @@ switch key
         if strcmp(name,'plot_freq')
         plot_freq(hObject, eventdata, handles);
         end
+    case 'c'
+       if ismember({get(hObject,'Tag')},{'state'})
+        set(hObject,'String', {'state'},'Value',1);end
+       if ismember({get(hObject,'Tag')},{'sacfile_lst'})
+        set(hObject,'String', {'sacfile list'},'Value',1);end
+       if ismember({get(hObject,'Tag')},'plotsac');
+        creat_sacfigure(hObject, eventdata, handles,handles.fnum);end
     case 'b'
     if strcmp(name,'plotsac')+strcmp(name,'plot_freq')
     handles.figure_index=handles.figure_index-handles.fnum;
@@ -98,7 +105,8 @@ switch key
             end
             
         Y=get(gca,'Ylim');
-        plot([p(1),p(1)],[Y(1)*0.8,Y(2)*0.8],'r');text(p(1),Y(2)*0.9,temp);hold off;
+        h1=plot([p(1),p(1)],[Y(1)*0.8,Y(2)*0.8],'r');text(p(1),Y(2)*0.9,temp);hold off;
+        try set(get(get(h1, 'Annotation'), 'LegendInformation'), 'IconDisplayStyle', 'off');end
         guidata(hObject, handles);
         end
    case handles.ret

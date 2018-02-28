@@ -22,7 +22,7 @@ function varargout = main(varargin)
 
 % Edit the above text to modify the response to help main
 
-% Last Modified by GUIDE v2.5 27-Feb-2018 16:50:31
+% Last Modified by GUIDE v2.5 28-Feb-2018 15:38:58
 
 % Begin initialization code - DO NOT EDIT
 addpath(genpath(pwd));
@@ -419,3 +419,26 @@ function plot_freq_KeyPressFcn(hObject, eventdata, handles)
 key = get(gcf,'Currentcharacter');
 eval(keypress(hObject, eventdata, handles,key));
 uicontrol(handles.plot_freq);
+
+
+
+function filterOrder_Callback(hObject, eventdata, handles)
+% hObject    handle to filterOrder (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hints: get(hObject,'String') returns contents of filterOrder as text
+%        str2double(get(hObject,'String')) returns contents of filterOrder as a double
+
+
+% --- Executes during object creation, after setting all properties.
+function filterOrder_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to filterOrder (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+% Hint: edit controls usually have a white background on Windows.
+%       See ISPC and COMPUTER.
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
+end

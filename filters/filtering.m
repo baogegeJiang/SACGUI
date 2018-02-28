@@ -1,15 +1,25 @@
 function [ handles ] = filtering( hObject, eventdata, handles )
-default_order=4;
+default_order=2;
 if handles.Edata==0;
     handles=read_sac( hObject, eventdata, handles );
 end
 if handles.Edata==0;return;end
+orderStr=get(handles.filterOrder,'String');
+if isempty(orderStr)==0
+    order=str2num(orderStr);
+    if length(order)==1
+        default_order=order;
+    end
+end
+
 mode_value=get(handles.mode_filter,'Value');
 switch mode_value
     case 1
         mode='butter';
     case 2
         mode='bessel';
+    case 3
+        mode='butter1';
 end
 
 nodelay=get(handles.no_delay,'Value');
