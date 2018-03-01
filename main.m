@@ -22,7 +22,7 @@ function varargout = main(varargin)
 
 % Edit the above text to modify the response to help main
 
-% Last Modified by GUIDE v2.5 28-Feb-2018 15:38:58
+% Last Modified by GUIDE v2.5 28-Feb-2018 20:59:49
 
 % Begin initialization code - DO NOT EDIT
 addpath(genpath(pwd));
@@ -442,3 +442,15 @@ function filterOrder_CreateFcn(hObject, eventdata, handles)
 if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
     set(hObject,'BackgroundColor','white');
 end
+
+
+% --- Executes on button press in saveFig.
+function saveFig_Callback(hObject, eventdata, handles)
+figName=sprintf('%s/output/%s.jpg',pwd,datestr(now,30));
+%print(gcf,figName,'-djpeg','-r500');
+saveas(gcf,figName);
+
+
+% --- Executes on key press with focus on saveFig and none of its controls.
+function saveFig_KeyPressFcn(hObject, eventdata, handles)
+

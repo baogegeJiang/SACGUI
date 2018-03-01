@@ -20,12 +20,12 @@ for i=1:index
     if i<=fnum
     eval(['temp=handles.',name,';']);
     a=temp;
-    set(a,'Unit','normalized','Position',pos,'Tag',name,'FontUnits','normalized','FontSize',0.03);
+    set(a,'Unit','normalized','Position',pos,'Tag',name,'FontUnits','normalized');
     else
-    a=axes('Unit','normalized','Position',pos,'Tag',name,'FontUnits','normalized','FontSize',0.03);
+    a=axes('Unit','normalized','Position',pos,'Tag',name,'FontUnits','normalized');
     end
     cla(a,'reset');
-    set(a,'Unit','normalized','Position',pos,'Tag',name,'FontUnits','normalized','FontSize',0.03);
+    set(a,'Unit','normalized','Position',pos,'Tag',name,'FontUnits','normalized');
     set(a,'ButtonDownFcn',handles.sacfbf);
     eval(['handles.',name,'=a;']);
     set(a,'XAxisLocation','bottom');

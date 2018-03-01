@@ -16,5 +16,6 @@ if handles.rela==0
     UD.ax(1:2)=handles.fax(1:2);
     axis_update2( hObject,UD,handles);
 end
+act=handles;
 end
 

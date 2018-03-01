@@ -19,7 +19,7 @@ if get(handles.inWindow,'Value')
    timeL=bSec:sac.DELTA:eSec;
    lt=length(timeL);
    data=data(1:min(lx,lt));timeL=timeL(1:min(lx,lt));
-   L=find((timeL-handles.fax(1)).*(timeL-handles.fax(2))<0);
+   L=find((timeL-UD.point(UD.pindex).p(1)).*(timeL-UD.point(UD.pindex).p(2))<0);
    data=sac.DATA1(L);
    data=data-mean(data);
 end

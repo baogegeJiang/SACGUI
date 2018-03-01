@@ -20,8 +20,9 @@ for i=1:fnum
     tUD.pindex=tUD.pindex+1;
     tUD.ax(1)=tp(1);
     tUD.ax(2)=tp(2);
-    set(temp,'XLim',tp','UserData',tUD);
+    set(temp,'XLim',tp','UserData',tUD,'FontUnits','normalized');
 end
+handles.fax(1)=min(handles.fax(1),UD.ax(1));handles.fax(2)=max(handles.fax(2),UD.ax(2));
 guidata(hObject,handles);
 end
 

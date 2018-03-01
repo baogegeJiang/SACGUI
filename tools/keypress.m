@@ -13,10 +13,8 @@ switch key
             handles.figure_index=handles.figure_index-handles.fnum;
             state_new(hObject, eventdata, handles,'plotting_done');
         end
-        guidata(hObject, handles);
-        if strcmp(name,'plot_freq')
         plot_freq(hObject, eventdata, handles);
-        end
+        guidata(hObject, handles);
     case 'c'
        if ismember({get(hObject,'Tag')},{'state'})
         set(hObject,'String', {'state'},'Value',1);end
@@ -31,7 +29,6 @@ switch key
         handles.figure_index=1;
         state_new(hObject, eventdata, handles,'plotting_first_one');
     end
-    guidata(hObject, handles);
     plot_freq(hObject, eventdata, handles);
     if strcmp(name,'plot_freq')
        plot_freq(hObject, eventdata, handles);
@@ -39,6 +36,7 @@ switch key
     else
         uicontrol(handles.sacfile_browser);
     end
+    guidata(hObject, handles);
 end
 return
 end
@@ -52,16 +50,23 @@ switch key
             state_new(hObject, eventdata, handles,'plotting_done');
         end
         guidata(hObject, handles);
-        plot_on(hObject, eventdata, handles);
+        handles=plot_on(hObject, eventdata, handles);
+        if strcmp(name,'plot_freq')
+           handles=plot_freq(hObject, eventdata, handles);
+        end
+        guidata(hObject, handles);
     case 'b'
-    if strcmp(name,'plotsac')
+    if strcmp(name,'plotsac') || strcmp(name,'plot_freq')
     handles.figure_index=handles.figure_index-handles.fnum;
     if  handles.figure_index<=0
         handles.figure_index=1;
         state_new(hObject, eventdata, handles,'plotting_first_one');
     end
-    guidata(hObject, handles);
-    plot_on(hObject, eventdata, handles);
+    handles=plot_on(hObject, eventdata, handles);
+    if strcmp(name,'plot_freq')
+       plot_freq(hObject, eventdata, handles);
+    end
+       guidata(hObject, handles);
     else
         uicontrol(handles.sacfile_browser);
     end
@@ -74,6 +79,8 @@ switch key
         set(gca,'UserData',UD);
         guidata(hObject, handles);
         axis_update2( hObject,UD,handles);
+        handles.fax(1)=min(handles.fax(1),UD.ax(1));handles.fax(2)=max(handles.fax(2),UD.ax(2));
+        guidata(hObject,handles);
     case 'o'
         for i=1:handles.fnum
             name=handles.ftag{i};

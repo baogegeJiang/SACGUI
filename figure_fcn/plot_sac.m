@@ -51,6 +51,7 @@ new_handles = gca;
 
 set(new_handles,'Tag',tag,'Layer','top','ButtonDownFcn',bdFcn,'UserData',UD);
 eval(['handles.',tag,'=new_handles;']);
+handles.pc=1;
 guidata(hObject, handles);
 
 end
