@@ -116,11 +116,6 @@ switch key
         try set(get(get(h1, 'Annotation'), 'LegendInformation'), 'IconDisplayStyle', 'off');end
         guidata(hObject, handles);
         end
-       case 'j'
-        if ismember({get(hObject,'Tag')},{'plotsac','figure1'})
-        if ismember({get(gca,'Tag')},handles.ftag)==0;return;end
-        pickPhase( hObject, eventdata, handles);    
-        end
    case handles.ret
        %[name,'_Callback(hObject, eventdata, handles)']
         act=[name,'_Callback(hObject, eventdata, handles);'];

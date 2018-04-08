@@ -407,8 +407,10 @@ handles = pickPhase( hObject, eventdata, handles );
 
 % --- Executes on button press in inWindow.
 function inWindow_Callback(hObject, eventdata, handles)
+% hObject    handle to inWindow (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
 
-<<<<<<< Updated upstream
 % Hint: get(hObject,'Value') returns toggle state of inWindow
 
 
@@ -452,5 +454,3 @@ saveas(gcf,figName);
 % --- Executes on key press with focus on saveFig and none of its controls.
 function saveFig_KeyPressFcn(hObject, eventdata, handles)
 
-=======
->>>>>>> Stashed changes
