@@ -170,6 +170,7 @@ switch key
        if ismember({get(hObject,'Tag')},{'state'})
         set(hObject,'String', {'state'},'Value',1);end
        if ismember({get(hObject,'Tag')},{'sacfile_lst'})
+        set(hObject,'Value',1);
         set(hObject,'String', {'sacfile list'},'Value',1);end
        if ismember({get(hObject,'Tag')},'plotsac');
         creat_sacfigure(hObject, eventdata, handles,handles.fnum);end
