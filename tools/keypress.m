@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 function [ act ] = keypress(hObject, eventdata, handles,key)
 act='';
 name=get(hObject,'Tag');
